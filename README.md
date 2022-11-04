@@ -1,5 +1,5 @@
 ###### Il faut premiérement lancer consul :
-![screen](/screens/consul.JPG)
+![screen](/screens/consulDemarrage.JPG)
 ###### Démmarer le config-service la chose qui va permettre aux autres micros services de trouver leurs configuration qui est indiquée dans config-repo
 ![screen](/screens/config-repo.JPG)
 ###### La gateway nous permet de redériger les requettes qui viennet du REST API vers le bon micro service
