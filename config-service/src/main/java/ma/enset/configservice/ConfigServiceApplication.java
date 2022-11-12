@@ -9,7 +9,7 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 @EnableConfigServer
 @EnableDiscoveryClient
 
-//demarrer d'abord consul puis : http://localhost:8500/ui/dc1/services
+//!!!! demarrer d'abord consul puis : http://localhost:8500/ui/dc1/services
 public class ConfigServiceApplication {
 
 	public static void main(String[] args) {

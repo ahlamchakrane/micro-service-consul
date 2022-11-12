@@ -14,7 +14,8 @@ import java.util.List;
 @Table(name = "orders")
 @Data @NoArgsConstructor @AllArgsConstructor @Builder
 public class Order {
-    @Id @GeneratedValue( strategy =  GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private Date createdAt;
     private OrderStatus status;
@@ -23,4 +24,12 @@ public class Order {
     private Customer customer;
     @OneToMany(mappedBy = "order")
     private List<ProductItem> productItems;
+
+    public double getTotal() {
+        double somme = 0;
+        for (ProductItem pi : productItems) {
+            somme += pi.getAmount();
+        }
+        return somme;
+    }
 }

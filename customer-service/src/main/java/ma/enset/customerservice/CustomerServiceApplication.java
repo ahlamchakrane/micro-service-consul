@@ -10,6 +10,7 @@ import org.springframework.context.annotation.Bean;
 import java.util.List;
 
 //localhost:8081/params
+//http://localhost:8500/  -- consule
 @SpringBootApplication
 public class CustomerServiceApplication {
 

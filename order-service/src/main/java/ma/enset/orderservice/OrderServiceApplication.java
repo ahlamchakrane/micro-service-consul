@@ -7,8 +7,8 @@ import ma.enset.orderservice.model.Customer;
 import ma.enset.orderservice.model.Product;
 import ma.enset.orderservice.repositories.OrderRepository;
 import ma.enset.orderservice.repositories.ProductItemRepository;
-import ma.enset.orderservice.service.CustomerRestClientService;
-import ma.enset.orderservice.service.InventoryRestClientService;
+import ma.enset.orderservice.services.CustomerRestClientService;
+import ma.enset.orderservice.services.InventoryRestClientService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -24,6 +24,7 @@ import java.util.Random;
 @EnableFeignClients
 public class OrderServiceApplication {
 	//localhost:9999/order-service/orders
+	//localhost:9999/order-service/orders/search/byCustomerId?customerId=1&projection=fullProjection
 
 	public static void main(String[] args) {
 		SpringApplication.run(OrderServiceApplication.class, args);

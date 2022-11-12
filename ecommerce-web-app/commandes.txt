@@ -1,0 +1,5 @@
+ng new nomProjet
+ng serve
+http://localhost:4200
+npm install --save bootstrap bootstrap-icons
+ng g c nomComponentg serve

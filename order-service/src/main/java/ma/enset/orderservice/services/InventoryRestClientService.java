@@ -1,4 +1,4 @@
-package ma.enset.orderservice.service;
+package ma.enset.orderservice.services;
 
 import ma.enset.orderservice.model.Customer;
 import ma.enset.orderservice.model.Product;
